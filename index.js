@@ -5,14 +5,14 @@ const initMap = () => {
     const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/dark-v10',
-    center: [4.894584, 52.36662],
+    center: [22.247899, 52.170177],
     zoom: 13,
 });
     const popup = new mapboxgl.Popup()
         .setHTML(`<h2>Siedlce</h2><p>Mark Parents house</p>`);
 
     const marker = new mapboxgl.Marker()
-    .setLngLat([4.894584, 52.36662])
+    .setLngLat([22.247899, 52.170177])
     .setPopup(popup)
     .addTo(map);
 }
